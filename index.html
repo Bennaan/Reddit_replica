@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reddit Replica</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Reddit Logo" class="logo-brand">
+                <span>Reddit</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto"></ul>
+
+                <form class="d-flex mx-auto">
+                    <input class="form-control me-2" type="search" placeholder="☌ Search reddit" aria-label="Search">
+
+                </form>
+
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle get-app" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="ri-qr-code-line"></i> Get App
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">App 1</a></li>
+                        <li><a class="dropdown-item" href="#">App 2</a></li>
+                        <li><a class="dropdown-item" href="#">App 3</a></li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-danger mx-3 log-in">Log In</button>
+                <i class="ri-user-line "></i>
+                <i class="ri-arrow-down-s-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <hr>
+
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Left Sidebar -->
+                <div class="col-md-2">
+                    <div class="left_sidebar sidebar-white">
+                        <div class="sidebar">
+                            <a href="#"><i class="ri-home-4-line"></i> Home</a>
+                            <a href="#"><i class="ri-polaroid-2-fill"></i> popular</a>
+                            <div class="dropdown">
+                                <button class="dropbtn"><i class="ri-gamepad-line"></i> Games </button>
+                                <div class="dropdown-content">
+                                    <a href="#">Fifa 2023</a>
+                                    <a href="#">Mortal Combat</a>
+                                    <a href="#">Call Of Duty</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn"><i class="ri-movie-line"></i> Movies</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Extraction</a>
+                                    <a href="#">Spider Man</a>
+                                    <a href="#">Fast X</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn"><i class="ri-basketball-line"></i> Sport</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Football</a>
+                                    <a href="#">Basket Ball</a>
+                                    <a href="#">Vollyball</a>
+                                </div>
+                            </div>
+                            <a href="#"><i class="ri-book-line"></i> Books</a>
+                            <a href="#"><i class="ri-bar-chart-2-line"></i> Charts</a>
+                            <a href="#"><i class="ri-bar-chart-2-fill"></i> Stats</a>
+                            <br><br>
+                            <hr>
+
+                            <div> Create an account to follow your favorite communities
+                                and start taking part in conversations.</div>
+                            <button id="joinButton">Join reddit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trending Today and Main Content -->
+                <div class="col-md-10 bg-trending">
+                    <!-- Trending Today section -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="h2">Trending Today</h2>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="card mb-1">
+                                        <div class="card-img" style="background-image: url('img/fantasy.jpg');"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Final Fantasy XVI release</h5>
+                                            <p class="card-text">Final Fantasy XVI opens with a Score of 91 on
+                                                OpenCritic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card mb-1">
+                                        <div class="card-img" style="background-image: url('image2.jpg');"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trending News 2</h5>
+                                            <p class="card-text">Some description about the trending news 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add more trending news cards here -->
+                                <div class="col-md-3">
+                                    <div class="card mb-1">
+                                        <div class="card-img" style="background-image: url('image2.jpg');"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trending News 2</h5>
+                                            <p class="card-text">Some description about the trending news 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card mb-1">
+                                        <div class="card-img" style="background-image: url('image2.jpg');"></div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trending News 2</h5>
+                                            <p class="card-text">Some description about the trending news 2.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <section class="popular-post-section">
+                            <h2 class="h2 mt-3">Popular Posts</h2>
+                            <nav class="navbar navbar-light bg-light">
+                                <ul class="nav nav-pills">
+                                    <li class="nav-item">
+                                        <a class="nav-link click-buttons border-rounded" href="#">
+                                            <i class="ri-fire-line"></i>
+                                            Hot
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link click-buttons border-rounded" href="#">
+                                            Everywhere
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link hover-gray" href="#">
+                                            <i class="ri-loader-fill icon"></i>
+                                            New
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link hover-gray" href="#">
+                                            <i class="ri-upload-2-fill icon icon-new"></i>
+                                            <span>Top</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ms-auto">
+                                        <a class="nav-link text-end" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link mx-6" href="#">
+                                            <span class="pthKOcceozMuXLYrLlbL1 cardclick-button hover-gray">
+                                                <i class="ri-layout-row-line icon "></i>
+                                            </span>
+                                            <i class="ri-arrow-down-s-line icon"></i>
+                                        </a>
+                                    </li>
+                                    <!-- More nav items here -->
+                                </ul>
+                            </nav>
+                            <div class="popular-posts-content">
+                                <!-- Popular post contents -->
+                                <div class="post mt-3 bg-white p-3">
+                                    <div class="post-header">
+                                        <div class="vote-container">
+                                            <div class="post-vote d-flex flex-column align-items-start">
+                                                <button class="upvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-up-line"></i></button>
+                                                <span class="vote-count">60.7k</span>
+                                                <button class="downvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-down-line"></i></button>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="post-author d-flex flex-row align-items-start mb-3 position-relative">
+                                            <img src="img/icon1.png" alt="Author Avatar" class="author-avatar">
+                                            <span class="posted-by">. Posted by blaugrana 22 hours ago</span>
+                                        </div>
+                                        <div class="join-button">
+                                            <button
+                                                class="d-flex align-items-center rounded-circle box-sizing-content text-center position-relative bg-lightgray border-0 text-black">Join</button>
+                                        </div>
+                                    </div>
+                                    <div class="post-body">
+                                        <h3 class="post-title">Without a doubt</h3>
+                                        <img src="img/iiiii.jpg" alt="Post Image" class="post-image img-fluid">
+                                        <div class="post-buttons">
+                                            <button class="comment-button btn btn-light"><i class="ri-message-line"></i>
+                                                6.7k Comment</button>
+                                            <button class="save-button btn btn-light"><i class="ri-bookmark-line"></i>
+                                                Save</button>
+                                            <button class="share-button btn btn-light"><i class="ri-share-line"></i>
+                                                Share</button>
+                                            <button class="more-button btn btn-light"><i
+                                                    class="ri-more-line"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="post mt-3 bg-white p-3">
+                                    <div class="post-header">
+                                        <div class="vote-container">
+                                            <div class="post-vote d-flex flex-column align-items-start">
+                                                <button class="upvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-up-line"></i></button>
+                                                <span class="vote-count">33.6k</span>
+                                                <button class="downvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-down-line"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="post-author">
+                                            <img src="img/icon1.png" alt="Author Avatar" class="author-avatar">
+                                            <span class="posted-by"> . Posted by Big
+                                                derah 18 hours ago</span>
+                                        </div>
+                                        <div class="join-button">
+                                            <button
+                                                class="d-flex align-items-center rounded-circle box-sizing-content text-center position-relative bg-lightgray border-0 text-black">Join</button>
+                                        </div>
+                                    </div>
+                                    <div class="post-body">
+                                        <h3 class="post-title">Big Wiz... No one comes close.</h3>
+                                        <img src="img/mmmmmmm.jpg" alt="Post Image" class="post-image img-fluid">
+                                        <div class="post-buttons">
+                                            <button class="comment-button btn btn-light"><i class="ri-message-line"></i>
+                                                6.7k Comment</button>
+                                            <button class="save-button btn btn-light"><i class="ri-bookmark-line"></i>
+                                                Save</button>
+                                            <button class="share-button btn btn-light"><i class="ri-share-line"></i>
+                                                Share</button>
+                                            <button class="more-button btn btn-light"><i
+                                                    class="ri-more-line"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post mt-3 bg-white p-3">
+                                    <div class="post-header">
+                                        <div class="vote-container">
+                                            <div class="post-vote d-flex flex-column align-items-start">
+                                                <button class="upvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-up-line"></i></button>
+                                                <span class="vote-count">33.6k</span>
+                                                <button class="downvote-button btn btn-outline-secondary"><i
+                                                        class="ri-arrow-down-line"></i></button>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="post-author d-flex flex-row align-items-start mb-3 position-relative">
+                                            <img src="img/icon1.png" alt="Author Avatar" class="author-avatar">
+                                            <span class="posted-by"> . Posted by ElonMusk 10 hours ago</span>
+                                        </div>
+                                        <div class="join-button">
+                                            <button
+                                                class="d-flex align-items-center rounded-circle box-sizing-content text-center position-relative bg-lightgray border-0 text-black">Join</button>
+                                        </div>
+                                    </div>
+                                    <div class="post-body">
+                                        <h3 class="post-title">This has to be the worst fucking update of all the time.
+                                        </h3>
+                                        <img src="img/elonmusk.jpg" alt="Post Image" class="post-image img-fluid">
+                                        <div class="post-buttons">
+                                            <button class="comment-button btn btn-light"><i class="ri-message-line"></i>
+                                                890.7k Comment</button>
+                                            <button class="save-button btn btn-light"><i class="ri-bookmark-line"></i>
+                                                Save</button>
+                                            <button class="share-button btn btn-light"><i class="ri-share-line"></i>
+                                                Share</button>
+                                            <button class="more-button btn btn-light"><i
+                                                    class="ri-more-line"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- More post elements here -->
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Right sidebar here -->
+                <section id="right-section">
+                    <div class="container popularcontainer">
+                        <div class="row">
+                            <div class="col">
+                                <div class="frontpage_sidebar">
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">popular communities
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">gaming
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">sports
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">tv
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">travels
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">health and fitness
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frontpagecontent">
+                                        <div class="content_1">
+                                            <div class="_content_1 d-flex align-items-center">
+                                                <div class="popular_com">fashion
+                                                    <svg class="arrow-down" viewBox="0 0 12 12"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g>
+                                                            <polygon fill="inherit"
+                                                                points="11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer area -->
+                        <div class="row footer-container">
+                            <div class="col">
+                                <div class="footer-contents">
+                                    <div class="footer-items">
+                                        <div class="items-list">
+                                            <div class="items">
+                                                <a href="#" class="item-1">User Agreement</a>
+                                                <a href="#" class="item-1">Privacy policy</a>
+                                            </div>
+                                            <div class="items">
+                                                <a href="#" class="item-1">Content policy</a>
+                                                <a href="#" class="item-1">Moderator Code of Conduct</a>
+                                            </div>
+                                        </div>
+                                        <div class="copyright">
+                                            Reddit, Inc. © 2023. All rights reserved.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row button-container back-to-top">
+                                    <div class="col">
+                                        <button role="button" tabindex="0" class="btn btn-light text-property">Back to
+                                            Top</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
